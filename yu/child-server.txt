@@ -1,0 +1,18 @@
+_port1 : 8004		--与用户交互的接口
+_port2 : 8001		--与middle-server交互的接口
+_server_ip1 :"192.168.1.65"	--与用户交互的ip
+_server_ip2 : "192.168.1.65"	--与middle-server交互的ip
+_prepare_accept_socket_count1 : 2000		--与用户交互的acceptor的准备接受客户端的socket数量
+_acceptor_work_count1 : 8		--与用户交互的acceptor的工作线程
+_acceptor_work_count2 : 4		--与middle-server交互的acceptor的工作线程
+_receive_buffer_size1 : 0x4000		--与用户交互的接收缓冲区大小
+_receive_buffer_size2 : 0x4000		--与middle-server交互的接收缓冲区大小
+_send_buffer_size1 : 0x4000		--与用户交互的发送缓冲区大小
+_send_buffer_size2 : 0x4000		--与middle-server交互的发送缓冲区大小
+_info_transfer_station_work_thread_count : 4		--与数据库进行数据交互的和把数据交给上层处理的‘数据中转站’线程数量
+_database_name : "ConfigDb"	--null
+_database_account_name : "millionserver"	--null
+_database_account_pwd : "123456"	--null
+_database_receive_buffer_size : 0x8000		--数据库交互缓冲区大小
+
+_database_work_thread_count : 1		--数据库工作线程
